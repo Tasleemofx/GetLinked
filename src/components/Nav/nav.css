@@ -1,0 +1,108 @@
+@keyframes slideinfromtop {
+    from {
+        margin-top: -200%;
+    }
+    to{
+        margin-top: 3em;
+    }
+    
+}
+.navMob{
+    display:flex;
+    flex-direction: column;
+    width: 21.75rem;
+    height: 30.75rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.04);
+    background: #150E28;
+    backdrop-filter: blur(30px);
+    position: absolute;
+    margin-top: 3em;
+    margin-inline: auto;
+    animation: slideinfromtop 2s 0s;
+}
+.clos-btn{
+    justify-self:first baseline;
+    font-size: 2em;
+    margin-left: 90%;
+    color:#150E28;
+    background: #fff;
+    border-radius: 50%;
+    border-color:linear-gradient(#903AFF,
+        #FF26B9)
+}
+.navMob ul{
+    text-align: left;
+    margin-left: 1em;
+
+}
+.navMob ul li,
+.navlg ul li{
+    list-style-type: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0625rem;
+    padding: 1em;
+}
+.navlg{
+    display: none;
+}
+.mn-navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #140D27;
+    color: white;
+    /* width: 100vw; */
+    padding: 2em;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.rg-mn-btn{
+    /* width: 10.75rem;
+    height: 3.3125rem; */
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    margin: 2em;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1em
+}
+
+@media screen and (min-width: 767px){
+    .navMob,
+    .navburg{
+        display: none;
+    }
+    .mn-navbar{
+        align-items: center;
+    }
+    .navlg{
+        display: flex;
+        align-items: center
+    }
+    .lg-mn{
+        height: 2em;
+    }
+    .navlg ul{
+        display: flex;
+    }
+    .navlg ul li{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 2em;
+    }
+}
