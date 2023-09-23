@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
-import logo from "../../assets/getLinkedlogo.png"
+import logo from "../../assets/getlinkedlogo.png"
 import { AiFillCloseCircle } from "react-icons/ai"
 import "./nav.css"
 
