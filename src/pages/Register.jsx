@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import dgraphic from "../assets/3dgraphic.png"
-import logo from "../assets/getLinkedlogo.png"
+import logo from "../assets/getlinkedlogo.png"
 
 import "./styles/register.css"
 

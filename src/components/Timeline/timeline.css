@@ -3,7 +3,12 @@
     color: #fff;
     padding: 1em;
 }
-
+.timeline-dets{
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
 .det-one{
     color: #FFF;
     font-family: Montserrat;
@@ -11,6 +16,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 170.9%;
+    margin: 1em auto;
+    width: 80%;
 }
 .timelinehd{
     color: #D434FE;
@@ -21,6 +28,15 @@
     height: 4.8125rem;
     background: #D434FE;
     position: relative;
+}
+.timelinebd{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170.9%;
+
 }
 .circ-num{
     width: 1.2075rem;
