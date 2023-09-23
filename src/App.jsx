@@ -1,17 +1,31 @@
-import NavBar from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import PP from './components/PrivacyPolicy/PP'
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Register from './pages/Register';
+
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />
+    
+    },
+    {
+      path: "/contact",
+      element: <Contact/>
+    },
+    {
+      path: "/register",
+      element: <Register />
+    }
+  ])
 
   return (
-    <div>
-      <NavBar />
-      <PP/>
-      <Footer />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 

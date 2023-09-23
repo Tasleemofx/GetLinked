@@ -1,0 +1,77 @@
+.intro{
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: #140D27;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.imd-idea img{
+    width: 16.50025rem;
+        height: 16.0625rem;
+        flex-shrink: 0;
+}
+.lg-txt{
+    color: #FFF;
+        text-align: center;
+        font-family: 'Clash Display';
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 133%;
+        /* 1.6625rem */
+}
+.int-purp {
+    display: block;
+    color: #D434FE;
+}
+.desc-intro{
+    margin: 1em auto;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71875rem;
+        /* 211.538% */
+}
+
+@media screen and (min-width: 768px){
+    .intro {
+        flex-direction: row;
+        gap: 3em;
+        align-items: center;
+        justify-content: center;
+    }
+        .imd-idea{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     
+            
+    }
+    .desc-intro {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.71875rem;
+        text-align: left;
+    }
+    .lg-txt {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .imd-idea img {
+            width: 30.625rem;
+            height: 29.8125rem;
+            flex-shrink: 0;
+}
+}

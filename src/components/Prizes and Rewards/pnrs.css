@@ -1,0 +1,127 @@
+.pnr{
+    background: url("../../assets/premium_photo.png") lightgray 0px -0.083px / 100% 109.967% no-repeat;
+    background-blend-mode: color-burn;
+    background: #150E28;
+    padding: 1em;
+    text-align: center;
+}
+.top-h{
+    margin: 1em auto;
+}
+.prize-main{
+    width: 20.0625rem;
+    height: 17.625rem;
+    margin: 1em auto 2em auto;
+}
+
+.prizecards{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 1em 1em 1em;
+}
+
+.silv img,
+.bron img{
+    width: 4.74981rem;
+    height: 4.77631rem;
+    margin-top: -70%;
+    
+}
+.gold img{
+    width: 7.85444rem;
+    height: 7.85444rem;
+    margin-top: -95%;
+    
+}
+.pnrcard{
+    width: 5.62544rem;
+    height: 7.85444rem;
+    border-radius: 0.5rem;
+    border: 1px solid #D434FE;
+    background: rgba(212, 52, 254, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.gold{
+    margin-top: 2em;
+}
+.crd-det{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    margin-top: -1em;
+}
+.mn-prize{
+    color: #D434FE;
+        font-family: Montserrat;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 216.4%;
+        margin-top: -1em;
+}
+.gld-prz{
+    color: #903AFF;
+}
+
+@media screen and (min-width: 1024px){
+    .pnr{
+        display: grid;
+        grid-template-areas: 
+        ". header"
+        "p-img medals";
+    }
+    .top-h{
+        grid-area: header;
+        margin-bottom: 3em;
+    }
+    .prize-main{
+        grid-area: p-img;
+    }
+    .prizecards{
+        grid-area: medals
+    }
+    .prize-main{
+        width: 34.25rem;
+            height: 30.125rem;
+            flex-shrink: 0;
+    }
+    .pnrcard {
+        width: 13.25rem;
+        height: 18.5rem;
+    }
+    .silv img,
+    .bron img {
+        width: 11.1875rem;
+        height: 11.25rem;
+        margin-top: -70%;
+
+    }
+    
+    .gold img {
+        width:18.5rem;
+        height: 18.5rem;
+        margin-top: -100%;
+
+    }
+    .crd-det {
+        font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 700;
+    }
+    .crd-det span {
+        font-size: 1.5rem;
+    }
+    .mn-prize {
+        font-size: 2rem;
+        font-weight: 700
+    }
+}

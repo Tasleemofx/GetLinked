@@ -1,0 +1,39 @@
+.timeline{
+    background: #150E28;
+    color: #fff;
+    padding: 1em;
+}
+
+.det-one{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170.9%;
+}
+.timelinehd{
+    color: #D434FE;
+    font-weight: 700;
+}
+.tline{
+    width: 0.125rem;
+    height: 4.8125rem;
+    background: #D434FE;
+    position: relative;
+}
+.circ-num{
+    width: 1.2075rem;
+    height: 1.2075rem;
+    padding: 0.5em 0.8em;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+    font-weight: 700;
+    position: absolute;
+    bottom: -3em;
+    left: -0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

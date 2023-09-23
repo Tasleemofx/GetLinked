@@ -1,0 +1,125 @@
+.ignite-sect{
+    background: #140D27;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+.bg-tex-bnd{
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        height: 5em;
+}
+.hi-sz{
+    background: url('../../assets/Purple-Lens-Flare-PNG.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.bg-tex-bnd p{
+    position: absolute;
+    right: 2em;
+}
+.bg-tex-bnd img{
+    position: absolute;
+    right: 2em;
+    top: 1em;
+}
+.lag-txt{
+        font-family: 'Clash Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+.pupr-tx {
+    color: #D434FE;
+        font-family: 'Clash Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: inline-flex;
+        align-items: center
+}
+.nom-txt{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%;
+}
+.bgN{
+    color: #FFF;
+    font-family: Unica One;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%;
+
+}
+.sml{
+        margin-right: 1em;
+}
+.ai-img{
+    height: 22.64969rem;
+    flex-shrink: 0;
+    background: url("../../assets/man-wearing-smart-glasses.png"), url("../../assets/ballbubble.png");
+    background-repeat: no-repeat;
+    background-color: #140D27;
+    background-size:cover;
+    background-blend-mode: luminosity, hard-light;
+}
+
+@media screen and (min-width: 767px){
+    .ignite-sect {
+        text-align: left;
+        padding-left: 1em;
+    }
+    .hi-sz{
+        display: flex;
+        gap: 2em;
+        width: 100vw;
+    }
+    .lag-txt{
+       width: 30vw;
+        text-align: left;
+        & p{
+            width: 32rem;
+        }
+}
+.nom-tx{
+    text-align: left;
+    width: 30vw;
+    padding-left: 0;
+}
+.rgig{
+    margin: 1em 0;
+}
+.ai-img{
+    width: 40%;
+}
+}
+
+@media screen and (min-width: 1000px){
+    .bg-tex-bnd {
+            font-size: 2.25rem;
+        }
+        .lag-txt{
+            width: 40%;
+            p{
+                width: 40%
+            }
+        }
+    .ai-img {
+        width: 40%;
+        height: 44.6875rem;
+        flex-shrink: 0;
+    }
+}

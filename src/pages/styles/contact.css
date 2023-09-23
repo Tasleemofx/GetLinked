@@ -1,0 +1,28 @@
+.contact-page{
+    background: #140D27;
+}
+
+
+.contact-title{
+    color: #D434FE;
+    font-family: Clash Display;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    width: 70%;
+}
+.cont-info{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+}

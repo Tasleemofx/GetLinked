@@ -1,0 +1,51 @@
+.faq{
+    background: #150E28;
+    padding: 1em;
+}
+.ac-div{
+    margin: 1em 0;
+}
+.accordion {
+    background: #150E28;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d434fe;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em auto;
+    width: 80%;
+    text-align: left;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & svg{
+        color: #d434fe
+    }
+}
+
+.faq-image{
+    width: 20.4375rem;
+    height: 20.4375rem;
+}
+
+@media screen and (min-width: 768px){
+    .faq{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .faq-image{
+        width: 46.3125rem;
+        height: 46.3125rem;
+    }
+}

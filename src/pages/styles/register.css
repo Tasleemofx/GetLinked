@@ -1,0 +1,84 @@
+.register-div{
+    background: #150E28;
+    height: 100%;
+}
+
+
+.registerhd{
+    color: #D434FE;
+        font-family: 'Clash Display';
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+
+.rg-pg{
+    background: #150E28;
+    border-radius: 0.25rem;
+    border: 2px solid #9A39FF;
+    padding: 0.5em 1em;
+}
+.rg-form-d{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1em auto;
+}
+.rg-form-d label{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.rg-form-d input{
+    width: 16.4375rem;
+    height: 2.4375rem;
+    padding-left: 1em;
+    border-radius: 0.25rem;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.div-fr{
+    margin: 1em;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    width: 80%
+}
+.selectd{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 1em auto;
+}
+.cat{
+    width: 9.6875rem;
+    height: 2.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em auto;
+}
+.grp{
+    width: 5.4375rem;
+    height: 2.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em auto;
+}
+@media screen and (min-width: 768px){
+    .registerhd{
+            font-family: 'Clash Display';
+            font-size: 2rem;
+            font-weight: 600;
+    }
+}

@@ -8,8 +8,7 @@
     
 }
 .navMob{
-    display:flex;
-    flex-direction: column;
+    display:block;
     width: 21.75rem;
     height: 30.75rem;
     border-radius: 0.5rem;
@@ -17,9 +16,12 @@
     background: #150E28;
     backdrop-filter: blur(30px);
     position: absolute;
-    margin-top: 3em;
-    margin-inline: auto;
+    left: 1em;
+    margin-top: 3.5em;
     animation: slideinfromtop 2s 0s;
+}
+.lg-mn {
+    cursor: pointer;
 }
 .clos-btn{
     justify-self:first baseline;
@@ -47,7 +49,17 @@
     line-height: normal;
     letter-spacing: -0.0625rem;
     padding: 1em;
+    cursor: pointer;
 }
+
+.navMob ul li a:visited,
+ .navlg ul li a:visited
+ {
+    color: red;
+        text-decoration:line-through;
+        color: #fff;
+    }
+
 .navlg{
     display: none;
 }
@@ -56,19 +68,15 @@
     justify-content: space-between;
     background: #140D27;
     color: white;
-    /* width: 100vw; */
     padding: 2em;
     position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    
 }
 .rg-mn-btn{
-    /* width: 10.75rem;
-    height: 3.3125rem; */
     flex-shrink: 0;
     border: 0;
     border-radius: 0.25rem;
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
-    margin: 2em;
     color: #FFF;
     font-family: Montserrat;
     font-size: 1rem;
@@ -78,7 +86,8 @@
     padding: 1em
 }
 
-@media screen and (min-width: 767px){
+
+@media screen and (min-width: 768px){
     .navMob,
     .navburg{
         display: none;
