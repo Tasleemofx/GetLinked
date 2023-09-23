@@ -1,5 +1,6 @@
 .contact-page{
     background: #140D27;
+    padding: 1em
 }
 
 
@@ -20,6 +21,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.form-outline{
+    width: 80%;
+    color: #fff
+}
+.con-inp{
+    width: 27.3125rem;
+    height: 2.9375rem;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 1em auto;
+}
+.form-outline label{
+    color: #fff;
 }
 
 

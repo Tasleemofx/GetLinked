@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
         <NavBar />
-        {/* <Ignite/> */}
+        <Ignite/>
         <Intro/>
         <Rng/>
         <JcKa />

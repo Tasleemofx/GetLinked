@@ -23,7 +23,7 @@ const NavBar = () => {
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li onClick={()=> navigate("/contact")}>Contact</li>
              
                 </ul>
 
@@ -35,7 +35,7 @@ const NavBar = () => {
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li onClick={()=> navigate("/contact")}>Contact</li>
              
                 </ul>
                 <button className="rg-mn-btn m2" onClick={()=> navigate("/register")}>Register</button>

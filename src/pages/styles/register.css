@@ -17,6 +17,7 @@
     background: #150E28;
     border-radius: 0.25rem;
     border: 2px solid #9A39FF;
+    border: 2px solid linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
     padding: 0.5em 1em;
 }
 .rg-form-d{
@@ -42,6 +43,9 @@
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.rg-form-d input:-ms-input-placeholder{
+    color: #fff;
+}
 .div-fr{
     margin: 1em;
     display: flex;
@@ -64,6 +68,7 @@
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 1em auto;
+    color: #fff;
 }
 .grp{
     width: 5.4375rem;
@@ -74,6 +79,7 @@
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 1em auto;
+    color: #fff;
 }
 @media screen and (min-width: 768px){
     .registerhd{

@@ -52,13 +52,6 @@
     cursor: pointer;
 }
 
-.navMob ul li a:visited,
- .navlg ul li a:visited
- {
-    color: red;
-        text-decoration:line-through;
-        color: #fff;
-    }
 
 .navlg{
     display: none;
