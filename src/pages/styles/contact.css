@@ -45,7 +45,8 @@
     width: 18.625rem;
     height: 2.9375rem;
 }
-.con-div label{
+.con-div label,
+.fld label{
     position: absolute;
     top:0.5em;
     background: #140d27;
@@ -94,6 +95,15 @@
     display: none;
 }
 @media screen and (min-width: 768px) {
+    .act-cont{
+        font-family: Montserrat;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+            color:  red
+    }
     .bck-con{
         display: none;
     }
@@ -103,7 +113,6 @@
     .a-bg{
         display: flex;
         flex-direction: row-reverse;
-        /* align-items: center; */
         justify-content: space-around;
     }
     .bigget{
@@ -125,7 +134,21 @@
     .g-it-lg{
         display: flex;
         flex-direction: column;
-       gap: 5em;
+       gap: 2.5em;
         width: 70%;
+        text-align: left;
     }
+    .footer-con{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        text-align: left
+    }
+    .soc-icons{
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
 }

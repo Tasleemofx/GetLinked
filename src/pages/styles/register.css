@@ -51,11 +51,11 @@
     display: flex;
     gap: 1px;
     align-items: center;
-    width: 80%
 }
 .selectd{
     display: flex;
     flex-direction: column;
+    gap: 0;
     color: #fff;
     margin: 1em auto;
 }
@@ -69,6 +69,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 1em auto;
     color: #fff;
+    background-color: #150E28;
 }
 .grp{
     width: 5.4375rem;
@@ -80,6 +81,32 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 1em auto;
     color: #fff;
+}
+.pupr-note{
+    width: 80%;
+    text-align: center;
+    color: #FF26B9;
+    font-family: Montserrat;
+    font-size: 0.5625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.check-box{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.check-box svg{
+    font-size: 1.5em;
 }
 @media screen and (min-width: 768px){
     .registerhd{

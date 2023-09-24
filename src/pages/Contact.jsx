@@ -1,16 +1,41 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import logo from "../assets/getlinkedlogo.png"
 import "./styles/contact.css"
+import { AppContext } from '../context/appcontext'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
+  const { baseUrl } = useContext(AppContext)
+  const [error, setError] = useState("")
   const [formvalues, setFormvalues] = React.useState({
-    firstname:"",
+    first_name:"",
     email: "",
-    topic: "",
+    phone_number: "",
     message: ""
   })
   const navigate = useNavigate()
+
+  function handleSubmit(e){
+    e.preventDefault()
+    if(!formvalues.first_name || !formvalues.email || !formvalues.phone_number || !formvalues.message      ){
+      toast("Please fill all fields before submitting")
+    }else{
+      fetch(`${baseUrl}/hackathon/contact-form`,{
+        method: "POST",
+        headers:{
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(...formvalues)
+      })
+      .then(res=> res.json())
+      .then(res=>{
+        toast("Message sent successfully!")
+      }).
+      catch(err=> toast("error sending message. Please try again!"))
+    }
+
+  }
   return (
     <div className="contact-page">
       
@@ -33,7 +58,7 @@ const Contact = () => {
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li onClick={()=> navigate("/contact")}>Contact</li>
+                <li  className="act-cont" onClick={()=> navigate("/contact")}>Contact</li>
              
                 </ul>
                 <button className="rg-mn-btn m2" onClick={()=> navigate("/register")}>Register</button>
@@ -52,25 +77,25 @@ const Contact = () => {
           to our event
         </p>
         
-        <form>
-           <div className={formvalues.firstname? "con-div fld":"con-div"} >
-            <input type="text" id="firstName" onChange={(e)=> setFormvalues({...formvalues, firstname: e.target.value})}/>
-            <label htmlFor="firstName" >First Name</label>
+        <form onSubmit={handleSubmit}>
+           <div className={formvalues.first_name? "con-div fld":"con-div"} >
+            <input type="text" id="first_Name" onChange={(e)=> setFormvalues({...formvalues, first_name: e.target.value})}/>
+            <label htmlFor="first_Name" >First Name</label>
           </div>
           <div className={formvalues.email? "con-div fld":"con-div"}>
             <input type="email" id="mail" onChange={(e)=> setFormvalues({...formvalues, email: e.target.value})}/>
             <label htmlFor="mail" >Email</label>
           </div>
-          <div className={formvalues.topic? "con-div fld":"con-div"}>
-            <input type="text" id="topic" onChange={(e)=> setFormvalues({...formvalues, topic: e.target.value})}/>
-            <label htmlFor="topic" >Topic</label>
+          <div className={formvalues.phone_number? "con-div fld":"con-div"}>
+            <input type="number" maxLength={12} id="topic" onChange={(e)=> setFormvalues({...formvalues,phone_number: e.target.value})}/>
+            <label htmlFor="topic" >Phone Number</label>
           </div>
           <div className={formvalues.message? "con-div fld ta-div":"con-div ta-div"}>
             <textarea type="text" id="message" onChange={(e)=> setFormvalues({ ...formvalues, message: e.target.value})}></textarea>
             <label htmlFor="message" >Message</label>
           </div>
           <div className="c-s-d">
-            <button className="cont-sub">Submit</button>
+            <button className="cont-sub" type="submit">Submit</button>
           </div>
         </form>
         </div>
