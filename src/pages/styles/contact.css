@@ -1,18 +1,24 @@
 .contact-page{
     background: #140D27;
-    padding: 1em
+    padding: 1em;
+    
 }
-
+.a-bg{
+    background: url("../../assets/Purple-Lens-Flare-PNG.png") no-repeat;
+        background-blend-mode: hard-light;
+}
 
 .contact-title{
     color: #D434FE;
-    font-family: Clash Display;
+    font-family: 'Clash Display';
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-align: left;
-    width: 70%;
+    margin-inline: auto;
+    width: 80%;
+    margin-bottom: 1em;
 }
 .cont-info{
     color: #FFF;
@@ -21,12 +27,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 1em;
 }
 .con-div{
     width: 80%;
     color: #fff;
     margin: 1em auto;
     border: 1px solid #fff;
+    border-radius: 0.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -41,23 +53,79 @@
 }
 .con-div input,
 .con-div textarea{
+    border-radius: 0.25rem;
     background: #140d27;
     color: #fff;
     border: 0;
     outline: 0;
-    padding-left: 1em;
+    padding: 1em;
 }
 .con-div input:focus~label,
-.con-div textarea:focus~label{
+.con-div textarea:focus~label,
+.fld label{
     color: #fff;
     top: -1em;
     left: 1em;
 }
-.ta-div, textarea{
-    height: 10em;
+.ta-div{
+    height: 10em
+} 
+.con-div textarea{
+    height: 12em;
+    padding: 1em;
 }
 
-
+.footer-con{
+    text-align: center;
+    color: #D434FE;
+        font-family: Montserrat;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.soc-icons{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.g-it-lg{
+    display: none;
+}
 @media screen and (min-width: 768px) {
-    
+    .bck-con{
+        display: none;
+    }
+    .con-div{
+        width: 27.3125rem;
+    }
+    .a-bg{
+        display: flex;
+        flex-direction: row-reverse;
+        /* align-items: center; */
+        justify-content: space-around;
+    }
+    .bigget{
+        color: #D434FE;
+            font-family: 'Clash Display';
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+    }
+    .a-bgform{
+        width: 38.5625rem;
+        height: 38.1875rem;
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        align-self: flex-end;
+    }
+    .g-it-lg{
+        display: flex;
+        flex-direction: column;
+       gap: 5em;
+        width: 70%;
+    }
 }

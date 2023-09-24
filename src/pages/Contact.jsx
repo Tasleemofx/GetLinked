@@ -1,12 +1,20 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import logo from "../assets/getlinkedlogo.png"
 import "./styles/contact.css"
 
 const Contact = () => {
+  const [formvalues, setFormvalues] = React.useState({
+    firstname:"",
+    email: "",
+    topic: "",
+    message: ""
+  })
   const navigate = useNavigate()
   return (
     <div className="contact-page">
-      <div onClick={()=> navigate(-1)}>
+      
+      <div onClick={()=> navigate(-1)} className="bck-con">
         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
           <circle cx="11.5" cy="11.5" r="11" stroke="url(#paint0_linear_177_298)"/>
           <path d="M12.2666 9.20001L9.19995 12.2667L12.2666 14.5667" stroke="white"/>
@@ -18,6 +26,22 @@ const Contact = () => {
           </defs>
         </svg>
         </div>
+        <nav className="mn-navbar">
+        <img src={logo} alt="logo" className="lg-mn" onClick={()=> navigate("/")}/>
+         <div className='navlg'>
+                <ul>
+                <li>Timeline</li>
+                <li>Overview</li>
+                <li>FAQs</li>
+                <li onClick={()=> navigate("/contact")}>Contact</li>
+             
+                </ul>
+                <button className="rg-mn-btn m2" onClick={()=> navigate("/register")}>Register</button>
+            </div>
+      </nav>
+      <div className="a-bg">
+        
+      <div className="a-bgform">
         <p className="contact-title">
           Questions or need 
           assistance?
@@ -27,24 +51,40 @@ const Contact = () => {
           Email us below to any question related 
           to our event
         </p>
+        
         <form>
-           <div className="con-div">
-            <input type="text" id="firstName" />
+           <div className={formvalues.firstname? "con-div fld":"con-div"} >
+            <input type="text" id="firstName" onChange={(e)=> setFormvalues({...formvalues, firstname: e.target.value})}/>
             <label htmlFor="firstName" >First Name</label>
           </div>
-          <div className="con-div">
-            <input type="email" id="mail" />
+          <div className={formvalues.email? "con-div fld":"con-div"}>
+            <input type="email" id="mail" onChange={(e)=> setFormvalues({...formvalues, email: e.target.value})}/>
             <label htmlFor="mail" >Email</label>
           </div>
-          <div className="con-div ta-div">
-            <textarea type="text" id="message" ></textarea>
+          <div className={formvalues.topic? "con-div fld":"con-div"}>
+            <input type="text" id="topic" onChange={(e)=> setFormvalues({...formvalues, topic: e.target.value})}/>
+            <label htmlFor="topic" >Topic</label>
+          </div>
+          <div className={formvalues.message? "con-div fld ta-div":"con-div ta-div"}>
+            <textarea type="text" id="message" onChange={(e)=> setFormvalues({ ...formvalues, message: e.target.value})}></textarea>
             <label htmlFor="message" >Message</label>
           </div>
           <div className="c-s-d">
             <button className="cont-sub">Submit</button>
           </div>
         </form>
+        </div>
         <div className="footer-con">
+          <div className="g-it-lg">
+          <p className="bigget">Get in touch</p>
+          <p className="cont-info">Contact information</p>
+          <p className="cont-info">27,Alara Street
+          Yaba 100012
+          Lagos State</p>
+          <p className="cont-info">Call Us : 07067981819</p>
+          <p className="cont-info">we are open from Monday-Friday
+          08:00am - 05:00pm</p>
+        </div>
           <p className="share">Share on</p>
           <div className="soc-icons">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
@@ -60,6 +100,7 @@ const Contact = () => {
               <path d="M5.22991 3.44961C5.22972 3.81557 5.08417 4.16647 4.82527 4.42511C4.56637 4.68375 4.21533 4.82895 3.84937 4.82877C3.48341 4.82858 3.13252 4.68303 2.87387 4.42413C2.61523 4.16523 2.47003 3.81419 2.47022 3.44823C2.4704 3.08227 2.61595 2.73138 2.87485 2.47274C3.13375 2.21409 3.48479 2.06889 3.85075 2.06908C4.21671 2.06926 4.5676 2.21481 4.82625 2.47371C5.08489 2.73261 5.23009 3.08365 5.22991 3.44961ZM5.2713 5.85054H2.51161V14.4884H5.2713V5.85054ZM9.63161 5.85054H6.88572V14.4884H9.60401V9.95558C9.60401 7.43046 12.8949 7.19589 12.8949 9.95558V14.4884H15.6201V9.01729C15.6201 4.76046 10.7493 4.91915 9.60401 7.00961L9.63161 5.85054Z" fill="#F8F8F8"/>
             </svg>
           </div>
+        </div>
         </div>
     </div>
   )

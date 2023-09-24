@@ -91,7 +91,8 @@
     }
     .navlg{
         display: flex;
-        align-items: center
+        align-items: center;
+        height: 5em;
     }
     .lg-mn{
         height: 2em;
