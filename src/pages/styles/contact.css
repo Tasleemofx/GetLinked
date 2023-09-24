@@ -22,19 +22,39 @@
     font-weight: 400;
     line-height: normal;
 }
-.form-outline{
+.con-div{
     width: 80%;
-    color: #fff
-}
-.con-inp{
-    width: 27.3125rem;
-    height: 2.9375rem;
     color: #fff;
-    border: 1px solid #fff;
     margin: 1em auto;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 18.625rem;
+    height: 2.9375rem;
 }
-.form-outline label{
+.con-div label{
+    position: absolute;
+    top:0.5em;
+    background: #140d27;
+    left: 1em;
+}
+.con-div input,
+.con-div textarea{
+    background: #140d27;
     color: #fff;
+    border: 0;
+    outline: 0;
+    padding-left: 1em;
+}
+.con-div input:focus~label,
+.con-div textarea:focus~label{
+    color: #fff;
+    top: -1em;
+    left: 1em;
+}
+.ta-div, textarea{
+    height: 10em;
 }
 
 
