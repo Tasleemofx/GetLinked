@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import dgraphic from "../assets/3dgraphic.png"
 import logo from "../assets/getlinkedlogo.png"
 import { AppContext } from "../context/appcontext"
@@ -41,25 +41,32 @@ const Register = () => {
   return (
     <div className="register-div">
       
-      <nav className="mn-navbar">
+      <nav className="mn-navbar sm-hide">
         <img src={logo} alt="logo" className="lg-mn" onClick={()=> navigate("/")}/>
             <div className='navlg'>
                 <ul>
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li>Contact</li>
+                <li onClick={()=> navigate("/contact")}>Contact</li>
              
                 </ul>
                 <button className="rg-mn-btn m2 rg-pg" onClick={()=> navigate("/register")}>Register</button>
             </div>
     </nav>
-      <p className="registerhd">Register</p>
+      
       <div className="register-mn">
-        <img src={dgraphic} alt="Register page" />
+        <img src={dgraphic} alt="Register page" className="rg-img" />
+        <div className="f-bord">
+        <p className="registerhd">Register</p>
+        
+        <div className="rr-hd">
         <p className="b-part">Be part of this movement</p>
         <p className="c-r-a">CREATE YOUR ACCOUNT</p>
+        </div>
          <form onSubmit={handleRegister}>
+          
+          <div className="form-iv">
           <div className="rg-form-d">
             <label htmlFor="">Team Name</label>
             <input type="text" placeholder="Enter the name of your group" />
@@ -75,6 +82,7 @@ const Register = () => {
           <div className="rg-form-d">
             <label htmlFor="">Project Topic</label>
             <input type="text" placeholder="What is your group project topic" />
+          </div>
           </div>
           <div className="div-fr">
           <div className="selectd ">
@@ -93,6 +101,7 @@ const Register = () => {
           </select>
           </div>
           </div>
+          
           <p className="pupr-note">
             Please review your registration details before submitting
                       </p>
@@ -108,6 +117,7 @@ const Register = () => {
             <button className="cont-sub" type="submit">Submit</button>
           </div>
         </form>
+        </div>
         </div>
     </div>
   )

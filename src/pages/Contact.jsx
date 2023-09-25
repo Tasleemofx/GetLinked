@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'
 
 const Contact = () => {
   const { baseUrl } = useContext(AppContext)
-  const [error, setError] = useState("")
+  
   const [formvalues, setFormvalues] = React.useState({
     first_name:"",
     email: "",
@@ -18,7 +18,7 @@ const Contact = () => {
 
   function handleSubmit(e){
     e.preventDefault()
-    if(!formvalues.first_name || !formvalues.email || !formvalues.phone_number || !formvalues.message      ){
+    if(!formvalues.first_name || !formvalues.email || !formvalues.phone_number || !formvalues.messaC){
       toast("Please fill all fields before submitting")
     }else{
       fetch(`${baseUrl}/hackathon/contact-form`,{
@@ -45,8 +45,8 @@ const Contact = () => {
           <path d="M12.2666 9.20001L9.19995 12.2667L12.2666 14.5667" stroke="white"/>
           <defs>
             <linearGradient id="paint0_linear_177_298" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#903AFF"/>
-              <stop offset="1" stop-color="#FF26B9"/>
+              <stop stopColor="#903AFF"/>
+              <stop offset="1" stopColor="#FF26B9"/>
             </linearGradient>
           </defs>
         </svg>

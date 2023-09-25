@@ -11,6 +11,37 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+       padding: 1em 2em;
+}
+.sm-hide {
+    display: none
+}
+
+.rg-img{
+    width: 12.1875rem;
+        height: 9.6875rem;
+        flex-shrink: 0;
+}
+.b-part{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:  1em 25px;
+    padding: 0 25px;
+}
+.c-r-a{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:  1em 25px;
+    padding: 0 25px;
+    
 }
 
 .rg-pg{
@@ -57,7 +88,7 @@
     flex-direction: column;
     gap: 0;
     color: #fff;
-    margin: 1em auto;
+    margin: 1em;
 }
 .cat{
     width: 9.6875rem;
@@ -109,9 +140,77 @@
     font-size: 1.5em;
 }
 @media screen and (min-width: 768px){
+   
     .registerhd{
             font-family: 'Clash Display';
             font-size: 2rem;
             font-weight: 600;
+
+    }
+    
+    .register-mn{
+        display: flex;
+        gap: 5px;
+        margin: 0;
+    }
+    .f-bord{
+        width: 46.25rem;
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rg-img{
+    width: 45%;
+    height: 44.8125rem;
+}
+    .sm-hide{
+        display: flex;
+    }
+    .bg-hide{
+        display: none;
+    }
+        .b-part {
+            font-size: 0.875rem
+        }
+    
+        .c-r-a {
+            font-size: 1.5rem
+        }
+    .form-iv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 34.875rem;
+    }
+    .div-fr {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 34.875rem;
+    }
+    .cat, 
+    .grp{
+        width: 16.4375rem;
+        height: 2.9375rem;
+        margin-inline: auto;
+    }
+
+    .pupr-note {
+        width: 80%;
+        text-align: left;
+        font-size: 0.75rem;
+        margin-left: 2em;
+    }
+
+    .check-box {
+        font-size: 0.75rem;
+        margin-left: 2em;
+    }
+
+    .check-box svg {
+        font-size: 1.5em;
+    }
+    .cont-sub{
+        width: 34.875rem;
+            height: 3.3125rem;
+            flex-shrink: 0;
     }
 }
