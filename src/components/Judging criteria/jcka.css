@@ -28,5 +28,6 @@
     .judgin-list li,
     .judge-purp{
         font-size: 1rem;
+        text-align: left;
     }
 }
