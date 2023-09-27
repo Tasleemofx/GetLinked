@@ -49,4 +49,11 @@
       font-size: 2rem;
 
   }
+  section.sect,
+  div.sect,
+  footer.sect,
+  nav.sect{
+    padding-inline: 4em;
+    
+  }
 }

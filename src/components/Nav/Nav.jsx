@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from "react-router-dom"
 import logo from "../../assets/getlinkedlogo.png"
 import { AiFillCloseCircle } from "react-icons/ai"
@@ -9,7 +9,7 @@ const NavBar = () => {
     const navigate = useNavigate();
     
   return (
-    <nav className="mn-navbar">
+    <nav className="mn-navbar sect">
         <img src={logo} alt="logo" className="lg-mn" onClick={()=> navigate("/")}/>
         <div className="navburg" onClick={()=> setOpenNav(!openNav)}>
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14" fill="none">

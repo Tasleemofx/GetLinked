@@ -1,4 +1,3 @@
-import React from 'react'
 import line from "../../assets/bent.png"
 import chain from "../../assets/chain.png"
 import bulb from "../../assets/Creative 1.png"
@@ -7,7 +6,7 @@ import "./ignite.css"
 
 const Ignite = () => {
   return (
-    <div className="ignite-sect">
+    <section className="ignite sect">
         <div className="bg-tex-bnd">
          <p>Igniting a Revolution in HR Innovation</p>
          <img src={line} alt="line" />
@@ -41,11 +40,13 @@ const Ignite = () => {
         </div>
         </div>
         <div className="ai-img">
+          <div className="sm-img">
 
+          </div>
         </div>
         </div>
         
-    </div>
+    </section>
   )
 }
 

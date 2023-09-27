@@ -1,4 +1,4 @@
-.ignite-sect{
+.ignite{
     background: #140D27;
     color: #fff;
     text-align: center;
@@ -14,11 +14,22 @@
         position: relative;
         height: 5em;
 }
+@keyframes rotate {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+    
+}
 .hi-sz{
     background: url('../../assets/Purple-Lens-Flare-PNG.png');
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
+    
+    /* transform: rotate(360deg) */
 }
 .bg-tex-bnd p{
     position: absolute;
@@ -78,14 +89,14 @@
 }
 
 @media screen and (min-width: 767px){
-    .ignite-sect {
+    .ignite {
         text-align: left;
         padding-left: 1em;
     }
     .hi-sz{
         display: flex;
         gap: 2em;
-        width: 100vw;
+        width: 100%;
     }
     .lag-txt{
        width: 30vw;
@@ -118,7 +129,7 @@
             }
         }
     .ai-img {
-        width: 40%;
+        width: 50vw;
         height: 44.6875rem;
         flex-shrink: 0;
     }

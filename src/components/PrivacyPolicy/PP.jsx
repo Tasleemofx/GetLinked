@@ -1,11 +1,10 @@
-import React from 'react'
 import keyboy from "../../assets/keyboy.png"
 import lockfaint from "../../assets/lockfaint.png"
 import "./pp.css"
 
 const PP = () => {
   return (
-    <div className="priv-pol">
+    <div className="priv-pol sect">
         <div className="txdiv">
         <p className="section-header">
             Privacy Policy and <span className='light-m'>Terms</span>
@@ -36,7 +35,7 @@ const PP = () => {
                 <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100"/>
-                <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2"/>
+                <path d="M5 8L7 10.5L13.5 6" stroke="white" strokeWidth="2"/>
                 </svg>
                 <p>The Standard License grants you a 
                     non-exclusive right to navigate and 
@@ -46,7 +45,7 @@ const PP = () => {
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                     <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100"/>
-                    <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2"/>
+                    <path d="M5 8L7 10.5L13.5 6" stroke="white" strokeWidth="2"/>
                     </svg>
                     <p>
                         You are licensed to use the item 

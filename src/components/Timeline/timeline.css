@@ -7,7 +7,8 @@
     margin: 1em auto;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    
 }
 .det-one{
     color: #FFF;
@@ -18,10 +19,14 @@
     line-height: 170.9%;
     margin: 1em auto;
     width: 80%;
+    position: relative;
 }
-.timelinehd{
+.timelinehd,
+.t-date{
     color: #D434FE;
     font-weight: 700;
+    margin-left: 2em;
+    margin-top: 1.5em;
 }
 .tline{
     width: 0.125rem;
@@ -36,7 +41,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 170.9%;
-
+    position: absolute;
+    top: 4em;
+    left: 2em;
 }
 .circ-num{
     width: 1.2075rem;
@@ -52,4 +59,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 992px){
+    .lg-txt,
+    .desc-intro{
+        text-align: center;
+    }
+
+    .det-one{
+        display: grid;
+        grid-template-areas:
+        "date linecirc hd"
+        "date linecirc bd";
+        align-items: center;
+        gap: 1em;
+    }
+        .timelinehd{
+            margin-top: -1em;
+            margin-left: 0;
+        }
+        .t-date{
+            margin-inline: auto;
+            margin-top: 7em; 
+            padding-left: 15em;   
+            grid-area: date;
+            width: 30vw;
+        }
+    .timelinebd{
+        width: 30vw;
+        position: static;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170.9%;
+       grid-area: hd;
+       margin-top: 3em;
+    }
+    .tline{
+        grid-area: linecirc;
+    }
+    .circ-num{
+        bottom: -2em;
+    }
+
 }

@@ -20,6 +20,7 @@
     left: 1em;
     margin-top: 3.5em;
     animation: slideinfromtop 2s 0s;
+    transition: 2s;
 }
 .lg-mn {
     cursor: pointer;

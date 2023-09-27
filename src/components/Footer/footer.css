@@ -56,6 +56,14 @@ footer div ul li{
     gap: 10px;
     align-items: center;
 }
+.ft-icons span{
+    color: #D434FE;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .all-ft-icons{
     display: flex;
     align-items: center;
@@ -80,9 +88,9 @@ footer div ul li{
 }
 @media screen and (min-width: 767px){
     .fter{
-        display: flex;
-        justify-content: space-around;
-        text-align: left;
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr;
+        gap: 10px
     }
     .ft-para {
         width: 50%

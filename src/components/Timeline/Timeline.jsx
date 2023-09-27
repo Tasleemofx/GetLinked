@@ -17,7 +17,7 @@ const Timeline = () => {
                     <div className="tline">
                         <span className="circ-num">1</span>
                     </div>
-                    
+                    <p className="t-date">November 18, 2023</p>
                     <p className="timelinebd">
                         The GetLinked hackathon 1.0 is formally announced to the general public
                         and teams begin to get ready to register
@@ -73,14 +73,15 @@ const Timeline = () => {
                 </div>
                 <div className="det-one">
                     <p className="timelinehd">Getlinked Hackathon 1.0 Offically Begins</p>
-                    <div className="tline">
-                        <span className="circ-num">6</span>
-                    </div>
-                    <p className="t-date">November 18, 2023</p>
                     <p className="timelinebd">
                         Accepted teams can now proceed to build 
                         their ground breaking skill driven solution 
                     </p>
+                    <div className="tline">
+                        <span className="circ-num">6</span>
+                    </div>
+                    <p className="t-date">November 18, 2023</p>
+                    
                 </div>
                 <div className="det-one">
                     <p className="timelinehd">Demo Day</p>
